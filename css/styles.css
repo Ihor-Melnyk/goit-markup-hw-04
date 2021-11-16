@@ -113,6 +113,19 @@ ul {
 .header-contacts .item + .item {
   margin-left: 50px;
 }
+.header-mail::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  outline: 1px solid red;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: var(--main-text-color);
+}
 .header-mail {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -121,6 +134,19 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--main-text-color);
+}
+.header-tel::before {
+  content: '';
+  display: inline-block;
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  outline: 1px solid red;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: var(--main-text-color);
 }
 .header-tel {
   padding-top: 32px;
@@ -193,12 +219,38 @@ ul {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+.dignity-item::before {
+  content: '';
+  display: block;
+  height: 120px;
+  margin-bottom: 30px;
+  outline: 1px solid red;
+
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background: var(--dgc-filter);
+  border-radius: 4px;
+}
+.dignity-item :nth-child(1)::before {
+  background-image: url();
+}
+.dignity-item :nth-child(2)::before {
+  background-image: url();
+}
+.dignity-item :nth-child(3)::before {
+  background-image: url();
+}
+.dignity-item :nth-child(4)::before {
+  background-image: url();
+}
 .dignity-item {
   width: 270px;
 }
 .dignity-item + .dignity-item {
   margin-left: 30px;
 }
+
 .dignity-text {
   margin-top: 0px;
   margin-bottom: 0px;
@@ -238,6 +290,12 @@ ul {
 }
 .command-list {
   display: flex;
+}
+.command-item {
+  background: var(--fourth-tittle-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 .command-item:not(:nth-child(4n)) {
   margin-right: 30px;
