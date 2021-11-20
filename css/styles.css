@@ -118,12 +118,14 @@ ul {
   margin-left: 50px;
 }
 .header-contacts-icon {
+  display: block;
   border: 1px solid tomato;
   fill: currentColor;
   margin-right: 10px;
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .header-mail {
   padding-top: 32px;
   padding-bottom: 32px;
