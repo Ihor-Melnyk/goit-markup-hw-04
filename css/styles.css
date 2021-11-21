@@ -47,10 +47,10 @@ ul {
   padding-right: 15px;
   margin: 0 auto;
 }
-/* .svg:hover,
+.svg:hover,
 .svg:focus {
   fill: var(--main-title-color);
-} */
+}
 /* --------------------HEADER------------------------- */
 .header {
   background-color: var(--fourth-tittle-color);
@@ -117,15 +117,15 @@ ul {
 .header-contacts .item + .item {
   margin-left: 50px;
 }
-.header-contacts-icon:hover,
+/* .header-contacts-icon:hover,
 .header-contacts-icon:focus {
   fill: currentColor;
-}
+} */
 .header-contacts-icon {
   display: block;
   padding: 0;
   /* border: 1px solid tomato; */
-  fill: tomato;
+  fill: currentColor;
   margin-right: 10px;
   justify-content: center;
 }
@@ -162,9 +162,11 @@ ul {
   padding: 200px 0;
   background: var(--background-title-color);
   text-align: center;
-  background-image: url();
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../images/headerimg.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
 }
-/* ставить картинку */
 .hero-title {
   width: 696px;
   margin-top: 0;
@@ -216,7 +218,17 @@ ul {
   margin-top: 0px;
   margin-bottom: 0px;
 }
-.dignity-item {
+.thumb {
+  width: 270px;
+  height: 120px;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  background: var(--dgc-filter);
+  border-radius: 4px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
   /* content: '';
   display: block;
   height: 120px;
@@ -235,7 +247,11 @@ ul {
 .dignity-item + .dignity-item {
   margin-left: 30px;
 }
-
+.dignity-item-icon {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
 .dignity-text {
   margin-top: 0px;
   margin-bottom: 0px;
