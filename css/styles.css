@@ -117,13 +117,17 @@ ul {
 .header-contacts .item + .item {
   margin-left: 50px;
 }
+.header-contacts-icon:hover,
+.header-contacts-icon:focus {
+  fill: currentColor;
+}
 .header-contacts-icon {
   display: block;
-  border: 1px solid tomato;
-  fill: currentColor;
+  padding: 0;
+  /* border: 1px solid tomato; */
+  fill: tomato;
   margin-right: 10px;
-  background-size: cover;
-  background-repeat: no-repeat;
+  justify-content: center;
 }
 
 .header-mail {
@@ -158,7 +162,9 @@ ul {
   padding: 200px 0;
   background: var(--background-title-color);
   text-align: center;
+  background-image: url();
 }
+/* ставить картинку */
 .hero-title {
   width: 696px;
   margin-top: 0;
