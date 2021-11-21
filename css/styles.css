@@ -42,14 +42,13 @@ ul {
 }
 .container {
   box-sizing: border-box;
-  /* border: solid 1px tomato; */
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
 }
-.svg:hover,
-.svg:focus {
+.svg-aktiv:hover,
+.svg-aktiv:focus {
   fill: var(--main-title-color);
 }
 /* --------------------HEADER------------------------- */
@@ -118,19 +117,13 @@ ul {
 .header-contacts .item + .item {
   margin-left: 50px;
 }
-/* .header-contacts-icon:hover,
-.header-contacts-icon:focus {
-  fill: currentColor;
-} */
 .header-contacts-icon {
   display: block;
   padding: 0;
-  /* border: 1px solid tomato; */
   fill: currentColor;
   margin-right: 10px;
   justify-content: center;
 }
-
 .header-mail {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -339,36 +332,65 @@ ul {
 .command-contacts-item + .command-contacts-item {
   margin-left: 10px;
 }
-.command-thumb-link {
-  display: flex;
-}
-.command-thumb-icon:hover,
-.command-thumb-icon:focus {
-  fill: var(--fourth-tittle-color);
+.command-thumb-link:focus,
+.command-thumb-link:hover {
+  color: #fff;
   background-color: var(--main-title-color);
 }
-.command-thumb-icon {
+.command-thumb-link {
   width: 44px;
   height: 44px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid tomato;
   border-radius: 50%;
-  background-color: var(--fourth-tittle-color);
-}
-.command-item-icon:hover,
-.command-item-icon:focus {
-  fill: var(--fourth-tittle-color);
-  background-color: var(--main-title-color);
+  background-color: var(--second-text-color);
+  color: var(--link-color);
 }
 .command-item-icon {
-  fill: var(--link-color);
+  fill: currentColor;
+}
+/* --------------------Постоянные клиенты----------------------- */
+.clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  margin-bottom: 50px;
+  letter-spacing: 0.03em;
+  color: var(--second-title-color);
+}
+.clients-list {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+}
+.clients-item + .clients-item {
+  margin-left: 30px;
+}
+.clients-link:hover {
+  color: var(--main-title-color);
+}
+.clients-link {
+  display: flex;
+  padding: 16px 32px;
+  border: 1px solid var(--link-color);
+  color: var(--link-color);
+  background-color: var(--second-text-color);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.clients-logo {
+  fill: currentColor;
 }
 /* --------------------FOOTER----------------------------------- */
 .footer {
   padding: 60px 0;
   background: var(--background-title-color);
+}
+.footer-cont {
+  display: flex;
+  align-items: baseline;
 }
 .footer-logo-main {
   font-family: Raleway;
@@ -392,6 +414,7 @@ ul {
   margin-top: 9px;
 }
 .footer-link {
+  display: flex;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
@@ -409,6 +432,45 @@ ul {
   letter-spacing: 0.03em;
   color: var(--footer-text-color);
 }
+.footer-social {
+  margin-left: 70px;
+}
+.footer-social-title {
+  font-weight: 700;
+  font-size: 14px;
+  margin-bottom: 20px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--fourth-tittle-color);
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+}
+.footer-social-item + .footer-social-item {
+  margin-left: 10px;
+}
+.footer-social-link:focus,
+.footer-social-link:hover {
+  color: var(--fourth-tittle-color);
+  background-color: var(--main-title-color);
+}
+.footer-social-link {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--fourth-tittle-color);
+}
+.footer-social-icon {
+  fill: currentColor;
+}
+
 /* --------------------PORTFOLIO----------------------------- */
 .portfolio-filtr-button:active,
 .portfolio-filtr-button:hover,
@@ -444,6 +506,7 @@ ul {
   line-height: 1.62;
   letter-spacing: 0.03em;
   color: var(--second-title-color);
+  background-color: var(--dgc-filter);
 }
 /* ---------------works-------------------------- */
 .works {
