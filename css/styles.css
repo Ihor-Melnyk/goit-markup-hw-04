@@ -1,5 +1,6 @@
 :root {
   --main-title-color: #2196f3;
+  --btn-hover: #188ce8;
   --second-title-color: #212121;
   --third-tittle-color: #000000;
   --fourth-tittle-color: #ffffff;
@@ -175,8 +176,14 @@ ul {
   text-transform: uppercase;
   color: var(--second-text-color);
 }
+.hero-btn:hover {
+  background: var(--btn-hover);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
 .hero-btn {
   border-radius: 4px;
+  border: 0;
   padding: 10px 32px;
   display: inline-block;
   cursor: progress;
@@ -189,6 +196,7 @@ ul {
   letter-spacing: 0.06em;
   color: var(--fourth-tittle-color);
   background: var(--main-title-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 /* --------------------ОСОБЕНОСТИ-------------------------------- */
 .dignity {
