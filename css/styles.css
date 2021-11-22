@@ -362,22 +362,25 @@ ul {
 }
 .clients-list {
   display: flex;
-  /* align-items: center; */
   justify-content: center;
 }
 .clients-item + .clients-item {
   margin-left: 30px;
 }
-.clients-link:hover {
+.clients-link:hover,
+.clients-link:focus {
   color: var(--main-title-color);
+  border: 1px solid var(--main-title-color);
 }
 .clients-link {
   display: flex;
-  padding: 16px 32px;
+  width: 170px;
+  height: 92px;
+  justify-content: center;
+  align-items: center;
   border: 1px solid var(--link-color);
   color: var(--link-color);
   background-color: var(--second-text-color);
-  box-sizing: border-box;
   border-radius: 4px;
 }
 .clients-logo {
